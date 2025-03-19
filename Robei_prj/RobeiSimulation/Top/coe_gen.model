@@ -1,0 +1,7 @@
+<!DOCTYPE Robei>
+<Module Code="&#xa;&#xa;&#xa;" Parameters="" X="0" Name="coe_gen" Height="600" File="Current/coe_gen.model" Include="" Type="module" Comment="" Parent="0" Width="900" Y="0" Class="module" Color="#d3d3d3">
+ <Port Datatype="wire" X="-0.0222222" Name="clka" Height="20" Side="left" Parent="coe_gen" Datasize="1" Function="" Width="20" Y="0.183333" Color="#6495ed" Inout="input"/>
+ <Port Datatype="wire" X="-0.0222222" Name="addra" Height="20" Side="left" Parent="coe_gen" Datasize="19" Function="" Width="20" Y="0.383333" Color="#808080" Inout="input"/>
+ <Port Datatype="wire" X="0.977778" Name="douta" Height="20" Side="right" Parent="coe_gen" Datasize="8" Function="" Width="20" Y="0.316667" Color="#0000ff" Inout="output"/>
+ <Port Datatype="wire" X="-0.0222222" Name="ena" Height="20" Side="left" Parent="coe_gen" Datasize="1" Function="" Width="20" Y="0.583333" Color="#deb887" Inout="input"/>
+</Module>

@@ -1,0 +1,97 @@
+<!DOCTYPE Robei>
+<Module X="132.067" Parent="0" Comment="" Name="Top_const" File="Current/Top_const.const" Type="constrain" Color="#d3d3d3" Height="604" Parameters="" Y="-2.96165" Include="" Class="module" Width="738" Code="&#xa;&#xa;&#xa;&#xa;&#xa;set_property PULLUP true [get_ports LM_SCL]&#xa;set_property PULLUP true [get_ports LM_SDA]&#xa;&#xa;set_property PULLUP true [get_ports APD_SCL]&#xa;set_property PULLUP true [get_ports APD_SDA]&#xa;&#xa;set_property PULLUP true [get_ports MOTOR__sclk]&#xa;set_property PULLUP true [get_ports MOTOR_sdat]&#xa;&#xa;&#xa;">
+ <Module X="173.837" Parent="Top_const" Comment="" Name="Top1" File="Current/Top.model" Type="model" Color="#d3d3d3" Height="545" Parameters="" Y="35" Include="" Class="Top" Width="376" Code="&#xa;    wire BEEP1;&#xa;    wire BEEP2;&#xa;    assign Beeeee = BEEP1||BEEP2;&#xa;&#xa;">
+  <Port Side="left" Inout="input" X="-0.0531915" Parent="Top1" Datasize="1" Name="Clk" Connect="" Function="" Color="#faebd7" Height="20" Y="0.122936" Datatype="wire" Width="20"/>
+  <Port Side="left" Inout="input" X="-0.0531915" Parent="Top1" Datasize="1" Name="Rst_n" Connect="" Function="" Color="#00ffff" Height="20" Y="0.26422" Datatype="wire" Width="20"/>
+  <Port Side="left" Inout="input" X="-0.0531915" Parent="Top1" Datasize="1" Name="i_echo0" Connect="" Function="" Color="#7fffd4" Height="20" Y="0.405505" Datatype="wire" Width="20"/>
+  <Port Side="left" Inout="input" X="-0.0531915" Parent="Top1" Datasize="1" Name="uart_rx" Connect="" Function="" Color="#f5f5dc" Height="20" Y="0.688073" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="LCD_CLK" Connect="" Function="" Color="#ffe4c4" Height="20" Y="0.119266" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="MOSI" Connect="" Function="" Color="#b8860b" Height="20" Y="0.165138" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="LCD_RES" Connect="" Function="" Color="#ffebcd" Height="20" Y="0.211009" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="LCD_DC" Connect="" Function="" Color="#0000ff" Height="20" Y="0.256881" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="LCD_BLK" Connect="" Function="" Color="#8a2be2" Height="20" Y="0.302752" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="arm_uart_tx" Connect="" Function="" Color="#deb887" Height="20" Y="0.348624" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="Beeeee" Connect="" Function="" Color="#5f9ea0" Height="20" Y="0.394495" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="MOTOR__sclk" Connect="" Function="" Color="#7fff00" Height="20" Y="0.440367" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="inout" X="0.946809" Parent="Top1" Datasize="1" Name="MOTOR_sdat" Connect="" Function="" Color="#d2691e" Height="20" Y="0.761468" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="o_trig0" Connect="" Function="" Color="#ff7f50" Height="20" Y="0.623853" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="LM_SCL" Connect="" Function="" Color="#ff7f50" Height="20" Y="0.486239" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="inout" X="0.946809" Parent="Top1" Datasize="1" Name="LM_SDA" Connect="" Function="" Color="#6495ed" Height="20" Y="0.807339" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="ARM_TX_EN" Connect="" Function="" Color="#fff8dc" Height="20" Y="0.53211" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="APD_SCL" Connect="" Function="" Color="#fff8dc" Height="20" Y="0.577982" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="inout" X="0.946809" Parent="Top1" Datasize="1" Name="APD_SDA" Connect="" Function="" Color="#dc143c" Height="20" Y="0.853211" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="4" Name="sel" Connect="" Function="" Color="#00ffff" Height="20" Y="0.0733945" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="8" Name="LED" Connect="" Function="" Color="#00008b" Height="20" Y="0.0275229" Datatype="wire" Width="20"/>
+  <Port Side="left" Inout="input" X="-0.0531915" Parent="Top1" Datasize="1" Name="i_echo1" Connect="" Function="" Color="#008b8b" Height="20" Y="0.546789" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="o_trig1" Connect="" Function="" Color="#b8860b" Height="20" Y="0.715596" Datatype="wire" Width="20"/>
+  <Port Side="right" Inout="output" X="0.946809" Parent="Top1" Datasize="1" Name="CS" Connect="" Function="" Color="#a9a9a9" Height="20" Y="0.669725" Datatype="wire" Width="20"/>
+ </Module>
+ <Port Side="left" Inout="input" X="-0.0271003" Parent="Top_const" Datasize="1" Name="N18" Function="" Color="#faebd7" Height="20" Y="0.125828" Datatype="wire" Width="20"/>
+ <Port Side="left" Inout="input" X="-0.0271003" Parent="Top_const" Datasize="1" Name="W9" Function="" Color="#00ffff" Height="20" Y="0.268212" Datatype="wire" Width="20"/>
+ <Port Side="left" Inout="input" X="-0.0271003" Parent="Top_const" Datasize="1" Name="U15" Function="" Color="#7fffd4" Height="20" Y="0.410596" Datatype="wire" Width="20"/>
+ <Port Side="left" Inout="input" X="-0.0271003" Parent="Top_const" Datasize="1" Name="L19" Function="" Color="#f0ffff" Height="20" Y="0.55298" Datatype="wire" Width="20"/>
+ <Port Side="left" Inout="input" X="-0.0271003" Parent="Top_const" Datasize="1" Name="L20" Function="" Color="#f5f5dc" Height="20" Y="0.695364" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="B19" Function="" Color="#ffe4c4" Height="20" Y="0.0149007" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="C20" Function="" Color="#b8860b" Height="20" Y="0.0463576" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="D19" Function="" Color="#ffebcd" Height="20" Y="0.0778146" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="F19" Function="" Color="#0000ff" Height="20" Y="0.109272" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="F20" Function="" Color="#8a2be2" Height="20" Y="0.140728" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="D20" Function="" Color="#a52a2a" Height="20" Y="0.172185" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="B20" Function="" Color="#deb887" Height="20" Y="0.203642" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="A20" Function="" Color="#5f9ea0" Height="20" Y="0.235099" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="G19" Function="" Color="#7fff00" Height="20" Y="0.266556" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="G20" Function="" Color="#d2691e" Height="20" Y="0.298013" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="G18" Function="" Color="#ff7f50" Height="20" Y="0.32947" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="H17" Function="" Color="#6495ed" Height="20" Y="0.360927" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="E19" Function="" Color="#fff8dc" Height="20" Y="0.392384" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="D18" Function="" Color="#dc143c" Height="20" Y="0.423841" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="F17" Function="" Color="#00ffff" Height="20" Y="0.455298" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="G15" Function="" Color="#00008b" Height="20" Y="0.486755" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="F16" Function="" Color="#008b8b" Height="20" Y="0.518212" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="H15" Function="" Color="#b8860b" Height="20" Y="0.549669" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="R18" Function="" Color="#a9a9a9" Height="20" Y="0.581126" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="K19" Function="" Color="#006400" Height="20" Y="0.612583" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="H16" Function="" Color="#a9a9a9" Height="20" Y="0.64404" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="U14" Function="" Color="#bdb76b" Height="20" Y="0.675497" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="U19" Function="" Color="#8b008b" Height="20" Y="0.706954" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="V17" Function="" Color="#556b2f" Height="20" Y="0.738411" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="T15" Function="" Color="#ff8c00" Height="20" Y="0.769868" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="inout" X="0.9729" Parent="Top_const" Datasize="1" Name="G17" Function="" Color="#9932cc" Height="20" Y="0.832781" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="inout" X="0.9729" Parent="Top_const" Datasize="1" Name="T14" Function="" Color="#8b0000" Height="20" Y="0.864238" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="inout" X="0.9729" Parent="Top_const" Datasize="1" Name="T16" Function="" Color="#e9967a" Height="20" Y="0.895695" Datatype="wire" Width="20"/>
+ <Port Side="right" Inout="output" X="0.9729" Parent="Top_const" Datasize="1" Name="M19" Function="" Color="#8fbc8f" Height="20" Y="0.801325" Datatype="wire" Width="20"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>Clk" Datatype="wire" To="Top_const>N18"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>Rst_n" Datatype="wire" To="Top_const>W9"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const>U15" Datatype="wire" To="Top_const#Top1>i_echo0"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>i_echo1" Datatype="wire" To="Top_const>L19"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const>L20" Datatype="wire" To="Top_const#Top1>uart_rx"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>LCD_CLK" Datatype="wire" To="Top_const>E19"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const>D18" Datatype="wire" To="Top_const#Top1>MOSI"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>LCD_RES" Datatype="wire" To="Top_const>F17"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const>G15" Datatype="wire" To="Top_const#Top1>LCD_DC"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>LCD_BLK" Datatype="wire" To="Top_const>F16"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const>H15" Datatype="wire" To="Top_const#Top1>CS"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>arm_uart_tx" Datatype="wire" To="Top_const>R18"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const>K19" Datatype="wire" To="Top_const#Top1>Beeeee"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>MOTOR__sclk" Datatype="wire" To="Top_const>H16"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>LM_SCL" Datatype="wire" To="Top_const>U14"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>ARM_TX_EN" Datatype="wire" To="Top_const>U19"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>APD_SCL" Datatype="wire" To="Top_const>V17"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>o_trig0" Datatype="wire" To="Top_const>T15"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const>M19" Datatype="wire" To="Top_const#Top1>o_trig1"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>MOTOR_sdat" Datatype="wire" To="Top_const>G17"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const>T14" Datatype="wire" To="Top_const#Top1>LM_SDA"/>
+ <Wire Parent="Top_const" Datasize="1" Name="0" From="Top_const#Top1>APD_SDA" Datatype="wire" To="Top_const>T16"/>
+ <Wire Parent="Top_const" Datasize="8" Name="0" From="Top_const#Top1>LED" Datatype="wire" To="Top_const>B19"/>
+ <Wire Parent="Top_const" Datasize="8" Name="1" From="Top_const#Top1>LED" Datatype="wire" To="Top_const>C20"/>
+ <Wire Parent="Top_const" Datasize="8" Name="2" From="Top_const#Top1>LED" Datatype="wire" To="Top_const>D19"/>
+ <Wire Parent="Top_const" Datasize="8" Name="3" From="Top_const#Top1>LED" Datatype="wire" To="Top_const>F19"/>
+ <Wire Parent="Top_const" Datasize="8" Name="4" From="Top_const#Top1>LED" Datatype="wire" To="Top_const>F20"/>
+ <Wire Parent="Top_const" Datasize="8" Name="5" From="Top_const#Top1>LED" Datatype="wire" To="Top_const>D20"/>
+ <Wire Parent="Top_const" Datasize="8" Name="6" From="Top_const#Top1>LED" Datatype="wire" To="Top_const>B20"/>
+ <Wire Parent="Top_const" Datasize="8" Name="7" From="Top_const#Top1>LED" Datatype="wire" To="Top_const>A20"/>
+ <Wire Parent="Top_const" Datasize="4" Name="0" From="Top_const#Top1>sel" Datatype="wire" To="Top_const>G19"/>
+ <Wire Parent="Top_const" Datasize="4" Name="1" From="Top_const#Top1>sel" Datatype="wire" To="Top_const>G20"/>
+ <Wire Parent="Top_const" Datasize="4" Name="2" From="Top_const#Top1>sel" Datatype="wire" To="Top_const>G18"/>
+ <Wire Parent="Top_const" Datasize="4" Name="3" From="Top_const#Top1>sel" Datatype="wire" To="Top_const>H17"/>
+</Module>

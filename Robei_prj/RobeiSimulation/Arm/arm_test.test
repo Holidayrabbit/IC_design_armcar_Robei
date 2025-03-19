@@ -1,0 +1,29 @@
+<!DOCTYPE Robei>
+<Module Color="#d3d3d3" Include="" Width="900" Y="0" Comment="" Name="arm_test" Height="600" Time_Scale="" X="0" Type="testbench" Class="module" Parent="0" Code="&#x9;parameter DATA_WIDTH = 80;&#xa;&#x9;parameter MSB_FIRST = 1;&#xa;&#xa;&#x9;initial Clk = 1;&#xa;&#x9;always #10 Clk = !Clk;&#xa;&#x9;&#xa;&#x9;initial begin&#xa;&#x9;&#x9;Rst_n = 0;&#xa;&#x9;&#x9;in_id = 0;&#xa;&#x9;&#x9;in_cmd = 0;&#xa;&#x9;&#x9;Baud_Set_in = 3'd4;&#xa;&#x9;&#x9;#201;&#xa;&#x9;&#x9;Rst_n = 1;&#xa;&#x9;&#x9;#200;&#xa;&#x9;&#x9;in_id = 8'h2;&#xa;&#x9;&#x9;in_cmd = 1'b1;&#xa;&#x9;&#x9;Baud_Set_in = 3'd4;&#xa;&#x9;&#x9;#20;&#xa;&#x9;&#x9;in_id =8'b00000000;&#xa;&#x9;&#x9;@(posedge Tx_Done);&#xa;&#x9;&#x9;#20000;&#xa;&#x9;&#x9;in_id = 8'h2;&#xa;&#x9;&#x9;in_cmd = 1'b1;&#xa;&#x9;&#x9;#20;&#xa;&#x9;&#x9;in_id =8'b00000000;&#xa;&#x9;&#x9;@(posedge Tx_Done);&#xa;&#x9;&#x9;#20;&#xa;&#x9;&#x9;in_id = 8'h9;&#xa;&#x9;&#x9;in_cmd = 1'b0;&#xa;&#x9;&#x9;#20;&#xa;&#x9;&#x9;in_id =8'b00000000;&#xa;&#x9;&#x9;#20000;&#xa;&#x9;&#x9;in_id = 8'h2;&#xa;&#x9;&#x9;in_cmd = 1'b0;&#xa;&#x9;&#x9;#20;&#xa;&#x9;&#x9;in_id =8'b00000000;&#xa;&#x9;&#x9;@(posedge Tx_Done);&#xa;&#x9;&#x9;#20;&#xa;&#x9;&#x9;$finish;&#x9;&#x9;&#xa;&#x9;end" File="Current/arm_test.test">
+ <Module Color="#d3d3d3" Include="" Width="160" Y="194.541" Comment="" Name="Arm1" Parameters="" Height="160" X="332.844" Type="model" Class="Arm" Parent="arm_test" Code="&#xa;&#xa;&#xa;" File="Current/Arm.model">
+  <Port Color="#faebd7" Width="20" Y="0.075" Name="Clk" Inout="input" Function="" Connect="" Datatype="wire" Datasize="1" Height="20" X="-0.125" Side="left" Parent="Arm1"/>
+  <Port Color="#00ffff" Width="20" Y="0.2125" Name="Rst_n" Inout="input" Function="" Connect="" Datatype="wire" Datasize="1" Height="20" X="-0.125" Side="left" Parent="Arm1"/>
+  <Port Color="#7fffd4" Width="20" Y="0.35" Name="in_id" Inout="input" Function="" Connect="" Datatype="wire" Datasize="8" Height="20" X="-0.125" Side="left" Parent="Arm1"/>
+  <Port Color="#f0ffff" Width="20" Y="0.625" Name="Baud_Set_in" Inout="input" Function="" Connect="" Datatype="wire" Datasize="3" Height="20" X="-0.125" Side="left" Parent="Arm1"/>
+  <Port Color="#f5f5dc" Width="20" Y="0.1375" Name="uart_tx" Inout="output" Function="" Connect="" Datatype="wire" Datasize="1" Height="20" X="0.875" Side="right" Parent="Arm1"/>
+  <Port Color="#ffe4c4" Width="20" Y="0.3375" Name="Tx_Done" Inout="output" Function="" Connect="" Datatype="wire" Datasize="1" Height="20" X="0.875" Side="right" Parent="Arm1"/>
+  <Port Color="#b8860b" Width="20" Y="0.5375" Name="uart_state" Inout="output" Function="" Connect="" Datatype="wire" Datasize="1" Height="20" X="0.875" Side="right" Parent="Arm1"/>
+  <Port Color="#ffebcd" Width="20" Y="0.4875" Name="in_cmd" Inout="input" Function="" Connect="" Datatype="wire" Datasize="1" Height="20" X="-0.125" Side="left" Parent="Arm1"/>
+ </Module>
+ <Port Color="#faebd7" Width="20" Y="0.125" Name="Clk" Inout="input" Function="" Datatype="reg" Datasize="1" Height="20" X="-0.0222222" Side="left" Parent="arm_test"/>
+ <Port Color="#00ffff" Width="20" Y="0.266667" Name="Rst_n" Inout="input" Function="" Datatype="reg" Datasize="1" Height="20" X="-0.0222222" Side="left" Parent="arm_test"/>
+ <Port Color="#7fffd4" Width="20" Y="0.408333" Name="in_id" Inout="input" Function="" Datatype="reg" Datasize="8" Height="20" X="-0.0222222" Side="left" Parent="arm_test"/>
+ <Port Color="#f0ffff" Width="20" Y="0.691667" Name="Baud_Set_in" Inout="input" Function="" Datatype="reg" Datasize="3" Height="20" X="-0.0222222" Side="left" Parent="arm_test"/>
+ <Port Color="#f5f5dc" Width="20" Y="0.183333" Name="uart_tx" Inout="output" Function="" Datatype="wire" Datasize="1" Height="20" X="0.977778" Side="right" Parent="arm_test"/>
+ <Port Color="#ffe4c4" Width="20" Y="0.383333" Name="Tx_Done" Inout="output" Function="" Datatype="wire" Datasize="1" Height="20" X="0.977778" Side="right" Parent="arm_test"/>
+ <Port Color="#b8860b" Width="20" Y="0.583333" Name="uart_state" Inout="output" Function="" Datatype="wire" Datasize="1" Height="20" X="0.977778" Side="right" Parent="arm_test"/>
+ <Port Color="#ffebcd" Width="20" Y="0.55" Name="in_cmd" Inout="input" Function="" Datatype="reg" Datasize="1" Height="20" X="-0.0222222" Side="left" Parent="arm_test"/>
+ <Wire Name="arm_test_Clk" Datatype="wire" Datasize="1" To="arm_test#Arm1>Clk" From="arm_test>Clk" Parent="arm_test"/>
+ <Wire Name="arm_test_Rst_n" Datatype="wire" Datasize="1" To="arm_test#Arm1>Rst_n" From="arm_test>Rst_n" Parent="arm_test"/>
+ <Wire Name="arm_test_in_id" Datatype="wire" Datasize="8" To="arm_test#Arm1>in_id" From="arm_test>in_id" Parent="arm_test"/>
+ <Wire Name="arm_test_in_cmd" Datatype="wire" Datasize="1" To="arm_test#Arm1>in_cmd" From="arm_test>in_cmd" Parent="arm_test"/>
+ <Wire Name="arm_test_Baud_Set_in" Datatype="wire" Datasize="3" To="arm_test#Arm1>Baud_Set_in" From="arm_test>Baud_Set_in" Parent="arm_test"/>
+ <Wire Name="Arm1_uart_tx" Datatype="wire" Datasize="1" To="arm_test>uart_tx" From="arm_test#Arm1>uart_tx" Parent="arm_test"/>
+ <Wire Name="Arm1_Tx_Done" Datatype="wire" Datasize="1" To="arm_test>Tx_Done" From="arm_test#Arm1>Tx_Done" Parent="arm_test"/>
+ <Wire Name="Arm1_uart_state" Datatype="wire" Datasize="1" To="arm_test>uart_state" From="arm_test#Arm1>uart_state" Parent="arm_test"/>
+</Module>

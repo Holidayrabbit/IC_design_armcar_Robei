@@ -1,0 +1,6 @@
+E:/CodeFile/Chusai/LM75A/verilog/LM75A_drive.v
+E:/CodeFile/Chusai/LM75A/verilog/LM75A_drive_tb.v
+E:/CodeFile/Chusai/LM75A/verilog/LM75A_i2c_bit_shifter.v
+E:/CodeFile/Chusai/LM75A/verilog/LM75A_i2c_control.v
+E:/CodeFile/Chusai/LM75A/verilog/Read_clock_of_LM75A.v
+

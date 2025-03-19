@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Aug 19 09:36:56 2024
+# Process ID: 6072
+# Current directory: E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21100 E:\CodeFile\JueSai\demoV8\Top_Final_test\vivado\TOP\TOP.xpr
+# Log file: E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/vivado.log
+# Journal file: E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/TOP.xpr
+INFO: [Project 1-313] Project file moved from 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/CSB_dri.v', nor could it be found using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/CSB_dri.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/vivado/vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:09 . Memory (MB): peak = 814.012 ; gain = 208.004
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 09:45:41 2024...

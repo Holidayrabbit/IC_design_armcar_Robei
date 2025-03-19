@@ -1,0 +1,12 @@
+`include "E:/CodeFile/Chusai/Chusai_code1/Top_Arm_Motor/verilog/Arm.v"
+`include "E:/CodeFile/Chusai/Chusai_code1/Top_Arm_Motor/verilog/Bus_arm_motor.v"
+`include "E:/CodeFile/Chusai/Chusai_code1/Top_Arm_Motor/verilog/Top_Arm_Motor.v"
+`include "E:/CodeFile/Chusai/Chusai_code1/Top_Arm_Motor/verilog/Top_Arm_Motor_tb.v"
+`include "E:/CodeFile/Chusai/Chusai_code1/Top_Arm_Motor/verilog/Wheel_Instruction_Analysis.v"
+`include "E:/CodeFile/Chusai/Chusai_code1/Top_Arm_Motor/verilog/arm_cal_m.v"
+`include "E:/CodeFile/Chusai/Chusai_code1/Top_Arm_Motor/verilog/i2c_bit_shifter.v"
+`include "E:/CodeFile/Chusai/Chusai_code1/Top_Arm_Motor/verilog/i2c_control_motor_plus.v"
+`include "E:/CodeFile/Chusai/Chusai_code1/Top_Arm_Motor/verilog/uart_byte_rx.v"
+`include "E:/CodeFile/Chusai/Chusai_code1/Top_Arm_Motor/verilog/uart_byte_tx.v"
+`include "E:/CodeFile/Chusai/Chusai_code1/Top_Arm_Motor/verilog/uart_data_tx.v"
+

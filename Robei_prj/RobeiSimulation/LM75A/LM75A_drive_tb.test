@@ -1,0 +1,20 @@
+<!DOCTYPE Robei>
+<Module Code="&#x9;pullup PUP(LM75A_drive1.LM75A_i2c_control2.i2c_sdat);&#xa;&#x9;&#xa;&#x9;localparam &#xa;&#x9;&#x9;WR   = 6'b000001,   //写请求&#xa;&#x9;&#x9;STA  = 6'b000010,   //起始位请求&#xa;&#x9;&#x9;RD   = 6'b000100,   //读请求&#xa;&#x9;&#x9;STO  = 6'b001000,   //停止位请求&#xa;&#x9;&#x9;ACK  = 6'b010000,   //应答位请求&#xa;&#x9;&#x9;NACK = 6'b100000;   //无应答请求&#xa;&#xa;&#xa;&#x9;always #10 Clk = ~Clk;&#xa;&#x9;&#xa;&#x9;initial begin&#xa;        Clk = 1;&#xa;&#x9;    Rst_n = 0;&#xa;&#x9;    LM75A_EN = 0;&#x9;&#x9;&#xa;&#x9;    #200;&#xa;&#x9;&#x9;Rst_n = 1;&#xa;&#x9;&#x9;#200;&#xa;&#x9;&#x9;LM75A_EN = 1;&#xa;//&#x9;&#x9;LM75A_drive1.LM75A_i2c_control2.LM75A_i2c_bit_shifter2.Rx_DATA=00001111;&#x9;&#x9;&#xa;&#x9;&#x9;@ (posedge Read_temp_en);&#xa;&#xa;&#x9;    #2000;&#xa;&#x9;    $finish;&#xa;&#x9;end&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;" Color="#d3d3d3" Width="900" Name="LM75A_drive_tb" Parent="0" Type="testbench" Time_Scale="" Height="600" Include="" X="0" Comment="" Y="0" Class="module" File="Current/LM75A_drive_tb.test">
+ <Module Code="&#xa;&#xa;&#xa;" Color="#d3d3d3" Width="160" Name="LM75A_drive1" Parent="LM75A_drive_tb" Type="model" Height="160" Include="" X="374.545" Comment="" Parameters="" Y="207.081" Class="LM75A_drive" File="Current/LM75A_drive.model">
+  <Port Side="left" Datasize="1" Color="#faebd7" Connect="" Width="20" Name="Clk" Parent="LM75A_drive1" Inout="input" Function="" Height="20" X="-0.125" Datatype="wire" Y="0.1375"/>
+  <Port Side="left" Datasize="1" Color="#00ffff" Connect="" Width="20" Name="Rst_n" Parent="LM75A_drive1" Inout="input" Function="" Height="20" X="-0.125" Datatype="wire" Y="0.3375"/>
+  <Port Side="left" Datasize="1" Color="#7fffd4" Connect="" Width="20" Name="LM75A_EN" Parent="LM75A_drive1" Inout="input" Function="" Height="20" X="-0.125" Datatype="wire" Y="0.5375"/>
+  <Port Side="right" Datasize="11" Color="#f0ffff" Connect="" Width="20" Name="Temp_data" Parent="LM75A_drive1" Inout="output" Function="" Height="20" X="0.875" Datatype="wire" Y="0.1875"/>
+  <Port Side="right" Datasize="1" Color="#f5f5dc" Connect="" Width="20" Name="Read_temp_en" Parent="LM75A_drive1" Inout="output" Function="" Height="20" X="0.875" Datatype="wire" Y="0.4375"/>
+ </Module>
+ <Port Side="left" Datasize="1" Color="#faebd7" Width="20" Name="Clk" Parent="LM75A_drive_tb" Inout="input" Function="" Height="20" X="-0.0222222" Datatype="reg" Y="0.183333"/>
+ <Port Side="left" Datasize="1" Color="#00ffff" Width="20" Name="Rst_n" Parent="LM75A_drive_tb" Inout="input" Function="" Height="20" X="-0.0222222" Datatype="reg" Y="0.383333"/>
+ <Port Side="left" Datasize="1" Color="#7fffd4" Width="20" Name="LM75A_EN" Parent="LM75A_drive_tb" Inout="input" Function="" Height="20" X="-0.0222222" Datatype="reg" Y="0.583333"/>
+ <Port Side="right" Datasize="11" Color="#f0ffff" Width="20" Name="Temp_data" Parent="LM75A_drive_tb" Inout="output" Function="" Height="20" X="0.977778" Datatype="wire" Y="0.233333"/>
+ <Port Side="right" Datasize="1" Color="#f5f5dc" Width="20" Name="Read_temp_en" Parent="LM75A_drive_tb" Inout="output" Function="" Height="20" X="0.977778" Datatype="wire" Y="0.483333"/>
+ <Wire Datasize="1" Name="LM75A_drive_tb_Clk" Parent="LM75A_drive_tb" Datatype="wire" From="LM75A_drive_tb>Clk" To="LM75A_drive_tb#LM75A_drive1>Clk"/>
+ <Wire Datasize="1" Name="LM75A_drive_tb_Rst_n" Parent="LM75A_drive_tb" Datatype="wire" From="LM75A_drive_tb>Rst_n" To="LM75A_drive_tb#LM75A_drive1>Rst_n"/>
+ <Wire Datasize="1" Name="LM75A_drive_tb_LM75A_EN" Parent="LM75A_drive_tb" Datatype="wire" From="LM75A_drive_tb>LM75A_EN" To="LM75A_drive_tb#LM75A_drive1>LM75A_EN"/>
+ <Wire Datasize="11" Name="LM75A_drive1_Temp_data" Parent="LM75A_drive_tb" Datatype="wire" From="LM75A_drive_tb#LM75A_drive1>Temp_data" To="LM75A_drive_tb>Temp_data"/>
+ <Wire Datasize="1" Name="LM75A_drive1_Read_temp_en" Parent="LM75A_drive_tb" Datatype="wire" From="LM75A_drive_tb#LM75A_drive1>Read_temp_en" To="LM75A_drive_tb>Read_temp_en"/>
+</Module>

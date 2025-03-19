@@ -1,0 +1,1708 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Aug 19 10:24:49 2024
+# Process ID: 19992
+# Current directory: E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/TOP.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/TOP.runs/synth_1/Top.vds
+# Journal file: E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/TOP.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9824 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 375.062 ; gain = 102.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Top_Arm_Motor' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_Arm_Motor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_byte_rx' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/uart_byte_rx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart_byte_rx' (1#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/uart_byte_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Bus_arm_motor' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Bus_arm_motor.v:1]
+WARNING: [Synth 8-5788] Register motor_id_reg in module Bus_arm_motor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Bus_arm_motor.v:137]
+WARNING: [Synth 8-5788] Register dance_valid_reg in module Bus_arm_motor is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Bus_arm_motor.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'Bus_arm_motor' (2#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Bus_arm_motor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'i2c_control_motor_plus' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/i2c_control_motor_plus.v:1]
+	Parameter WR bound to: 6'b000001 
+	Parameter STA bound to: 6'b000010 
+	Parameter RD bound to: 6'b000100 
+	Parameter STO bound to: 6'b001000 
+	Parameter ACK bound to: 6'b010000 
+	Parameter NACK bound to: 6'b100000 
+	Parameter IDLE bound to: 7'b0000001 
+	Parameter WR_REG bound to: 7'b0000010 
+	Parameter WAIT_WR_DONE bound to: 7'b0000100 
+	Parameter WR_REG_DONE bound to: 7'b0001000 
+	Parameter RD_REG bound to: 7'b0010000 
+	Parameter WAIT_RD_DONE bound to: 7'b0100000 
+	Parameter RD_REG_DONE bound to: 7'b1000000 
+INFO: [Synth 8-6157] synthesizing module 'i2c_bit_shifter' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/i2c_bit_shifter.v:1]
+	Parameter SYS_CLOCK bound to: 33333333 - type: integer 
+	Parameter SCL_CLOCK bound to: 100000 - type: integer 
+	Parameter SCL_CNT_M bound to: 82 - type: integer 
+	Parameter WR bound to: 6'b000001 
+	Parameter STA bound to: 6'b000010 
+	Parameter RD bound to: 6'b000100 
+	Parameter STO bound to: 6'b001000 
+	Parameter ACK bound to: 6'b010000 
+	Parameter NACK bound to: 6'b100000 
+	Parameter IDLE bound to: 8'b00000001 
+	Parameter GEN_STA bound to: 8'b00000010 
+	Parameter WR_DATA bound to: 8'b00000100 
+	Parameter RD_DATA bound to: 8'b00001000 
+	Parameter CHECK_ACK bound to: 8'b00010000 
+	Parameter GEN_ACK bound to: 8'b00100000 
+	Parameter GEN_STO bound to: 8'b01000000 
+INFO: [Synth 8-226] default block is never used [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/i2c_bit_shifter.v:153]
+INFO: [Synth 8-226] default block is never used [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/i2c_bit_shifter.v:214]
+WARNING: [Synth 8-5788] Register i2c_sclk_reg in module i2c_bit_shifter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/i2c_bit_shifter.v:132]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_bit_shifter' (3#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/i2c_bit_shifter.v:1]
+WARNING: [Synth 8-5788] Register cnt_reg in module i2c_control_motor_plus is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/i2c_control_motor_plus.v:116]
+WARNING: [Synth 8-5788] Register RW_Done_reg in module i2c_control_motor_plus is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/i2c_control_motor_plus.v:118]
+INFO: [Synth 8-6155] done synthesizing module 'i2c_control_motor_plus' (4#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/i2c_control_motor_plus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Arm' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Arm.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_data_tx' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/uart_data_tx.v:1]
+	Parameter DATA_WIDTH bound to: 80 - type: integer 
+	Parameter MSB_FIRST bound to: 1 - type: integer 
+	Parameter S0 bound to: 0 - type: integer 
+	Parameter S1 bound to: 1 - type: integer 
+	Parameter S2 bound to: 2 - type: integer 
+	Parameter S3 bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/uart_data_tx.v:57]
+INFO: [Synth 8-6157] synthesizing module 'uart_byte_tx' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/uart_byte_tx.v:1]
+	Parameter START_BIT bound to: 1'b0 
+	Parameter STOP_BIT bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'uart_byte_tx' (5#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/uart_byte_tx.v:1]
+WARNING: [Synth 8-5788] Register Tx_Done_reg in module uart_data_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/uart_data_tx.v:62]
+WARNING: [Synth 8-5788] Register data_r_reg in module uart_data_tx is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/uart_data_tx.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'uart_data_tx' (6#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/uart_data_tx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arm_cal_m' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:1]
+	Parameter DATA_WIDTH bound to: 80 - type: integer 
+	Parameter fill_data bound to: 8'b01010101 
+	Parameter delta_angle_low bound to: 8'b00011010 
+	Parameter delta_angle_heigh bound to: 8'b00000000 
+	Parameter S0 bound to: 0 - type: integer 
+	Parameter S1 bound to: 1 - type: integer 
+	Parameter S2 bound to: 2 - type: integer 
+	Parameter S3 bound to: 3 - type: integer 
+WARNING: [Synth 8-6090] variable 'in_low' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:112]
+WARNING: [Synth 8-6090] variable 'in_heigh' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:113]
+WARNING: [Synth 8-6090] variable 'in_low' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:124]
+WARNING: [Synth 8-6090] variable 'in_heigh' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:125]
+WARNING: [Synth 8-6090] variable 'in_low' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:136]
+WARNING: [Synth 8-6090] variable 'in_heigh' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:137]
+WARNING: [Synth 8-6090] variable 'in_low' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:148]
+WARNING: [Synth 8-6090] variable 'in_heigh' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:149]
+WARNING: [Synth 8-6090] variable 'in_low' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:160]
+WARNING: [Synth 8-6090] variable 'in_heigh' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:161]
+WARNING: [Synth 8-6090] variable 'in_low' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:172]
+WARNING: [Synth 8-6090] variable 'in_heigh' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:173]
+WARNING: [Synth 8-6090] variable 'data_out' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:608]
+WARNING: [Synth 8-6014] Unused sequential element med_angle_reg was removed.  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:72]
+WARNING: [Synth 8-6014] Unused sequential element reg_cal_reg was removed.  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:79]
+WARNING: [Synth 8-5788] Register time_low_reg in module arm_cal_m is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:95]
+WARNING: [Synth 8-5788] Register time_heigh_reg in module arm_cal_m is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:96]
+WARNING: [Synth 8-5788] Register data_out_reg in module arm_cal_m is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:599]
+WARNING: [Synth 8-5788] Register send_en_out_reg in module arm_cal_m is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:610]
+INFO: [Synth 8-6155] done synthesizing module 'arm_cal_m' (7#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_cal_m.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Arm' (8#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Arm.v:1]
+WARNING: [Synth 8-350] instance 'Arm4' of module 'Arm' requires 8 connections, but only 7 given [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_Arm_Motor.v:89]
+INFO: [Synth 8-6157] synthesizing module 'Wheel_Instruction_Analysis' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Wheel_Instruction_Analysis.v:1]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter DO_WR bound to: 1 - type: integer 
+	Parameter WAIT_WR_DONE bound to: 2 - type: integer 
+	Parameter DO_RD bound to: 3 - type: integer 
+	Parameter WAIT_RD_DONE bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element motor_wr_err_reg was removed.  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Wheel_Instruction_Analysis.v:105]
+WARNING: [Synth 8-6014] Unused sequential element motor_rd_err_reg was removed.  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Wheel_Instruction_Analysis.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'Wheel_Instruction_Analysis' (9#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Wheel_Instruction_Analysis.v:1]
+INFO: [Synth 8-6157] synthesizing module 'arm_en_module' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_en_module.v:1]
+WARNING: [Synth 8-5788] Register length_reg in module arm_en_module is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_en_module.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'arm_en_module' (10#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/arm_en_module.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Arm_Motor' (11#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_Arm_Motor.v:1]
+INFO: [Synth 8-6157] synthesizing module 'TFT_top' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/TFT_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'TFT_driver' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/TFT_driver.v:1]
+	Parameter CMD bound to: 0 - type: integer 
+	Parameter DATA bound to: 1 - type: integer 
+	Parameter IDLE bound to: 7'b0000001 
+	Parameter RESET bound to: 7'b0000010 
+	Parameter DELAY bound to: 7'b0000100 
+	Parameter RESET_SET bound to: 7'b0001000 
+	Parameter BLK_SET bound to: 7'b0010000 
+	Parameter INIT bound to: 7'b0100000 
+	Parameter DISPLAY bound to: 7'b1000000 
+	Parameter SPI_IDLE bound to: 5'b00001 
+	Parameter SPI_START bound to: 5'b00010 
+	Parameter SPI_SEND bound to: 5'b00100 
+	Parameter SPI_WAIT bound to: 5'b01000 
+	Parameter SPI_STOP bound to: 5'b10000 
+WARNING: [Synth 8-5788] Register DELAY_TIME_SET_reg in module TFT_driver is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/TFT_driver.v:163]
+WARNING: [Synth 8-5788] Register wait_cnt_reg in module TFT_driver is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/TFT_driver.v:288]
+INFO: [Synth 8-6155] done synthesizing module 'TFT_driver' (12#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/TFT_driver.v:1]
+INFO: [Synth 8-6157] synthesizing module 'single_ROM2' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/single_ROM2.v:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_DEPTH bound to: 500000 - type: integer 
+	Parameter DELAY bound to: 1 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'E:/CodeFile/JueSai/CICC1054/Vivado_prj/Picture_Data/LCDoutput.txt' is read successfully [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/single_ROM2.v:25]
+WARNING: [Synth 8-6014] Unused sequential element buffer_reg[1] was removed.  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/single_ROM2.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'single_ROM2' (13#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/single_ROM2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'TFT_top' (14#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/TFT_top.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top.v:105]
+INFO: [Synth 8-6157] synthesizing module 'Core_of_top' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Core_of_top.v:1]
+	Parameter Min_distance bound to: 14'b00000000110010 
+INFO: [Synth 8-6155] done synthesizing module 'Core_of_top' (15#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Core_of_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Sense_top' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Sense_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'APD_drive' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/APD_drive.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_clock_of_APD' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Read_clock_of_APD.v:1]
+	Parameter DELAY bound to: 33333333 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Read_clock_of_APD' (16#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Read_clock_of_APD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'APD_i2c_control' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/APD_i2c_control.v:1]
+	Parameter APD_address bound to: 7'b0111001 
+	Parameter APD_begin_value bound to: 8'b00000011 
+	Parameter APD_begin bound to: 8'b10000000 
+	Parameter Clear_Low bound to: 8'b10010100 
+	Parameter Clear_High bound to: 8'b10010101 
+	Parameter Red_Low bound to: 8'b10010110 
+	Parameter Red_High bound to: 8'b10010111 
+	Parameter Green_Low bound to: 8'b10011000 
+	Parameter Green_High bound to: 8'b10011001 
+	Parameter Blue_Low bound to: 8'b10011010 
+	Parameter Blue_High bound to: 8'b10011011 
+	Parameter clear_small bound to: 8'b00010000 
+	Parameter clear_middle bound to: 8'b00110101 
+	Parameter clear_big bound to: 8'b01110000 
+	Parameter BLACK bound to: 8'b00000001 
+	Parameter WHITE bound to: 8'b00000010 
+	Parameter YELLOW bound to: 8'b00000011 
+	Parameter RED bound to: 8'b00000100 
+	Parameter GREEN bound to: 8'b00000101 
+	Parameter BLUE bound to: 8'b00000110 
+	Parameter WR bound to: 6'b000001 
+	Parameter STA bound to: 6'b000010 
+	Parameter RD bound to: 6'b000100 
+	Parameter STO bound to: 6'b001000 
+	Parameter ACK bound to: 6'b010000 
+	Parameter NACK bound to: 6'b100000 
+	Parameter IDLE bound to: 7'b0000001 
+	Parameter WR_REG bound to: 7'b0000010 
+	Parameter WAIT_WR_DONE bound to: 7'b0000100 
+	Parameter WR_REG_DONE bound to: 7'b0001000 
+	Parameter RD_REG bound to: 7'b0010000 
+	Parameter WAIT_RD_DONE bound to: 7'b0100000 
+	Parameter RD_REG_DONE bound to: 7'b1000000 
+INFO: [Synth 8-6157] synthesizing module 'APD_i2c_bit_shifter' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/APD_i2c_bit_shifter.v:1]
+	Parameter SYS_CLOCK bound to: 33333333 - type: integer 
+	Parameter SCL_CLOCK bound to: 200000 - type: integer 
+	Parameter SCL_CNT_M bound to: 40 - type: integer 
+	Parameter WR bound to: 6'b000001 
+	Parameter STA bound to: 6'b000010 
+	Parameter RD bound to: 6'b000100 
+	Parameter STO bound to: 6'b001000 
+	Parameter ACK bound to: 6'b010000 
+	Parameter NACK bound to: 6'b100000 
+	Parameter IDLE bound to: 8'b00000001 
+	Parameter GEN_STA bound to: 8'b00000010 
+	Parameter WR_DATA bound to: 8'b00000100 
+	Parameter RD_DATA bound to: 8'b00001000 
+	Parameter CHECK_ACK bound to: 8'b00010000 
+	Parameter GEN_ACK bound to: 8'b00100000 
+	Parameter GEN_STO bound to: 8'b01000000 
+INFO: [Synth 8-226] default block is never used [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/APD_i2c_bit_shifter.v:152]
+INFO: [Synth 8-226] default block is never used [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/APD_i2c_bit_shifter.v:213]
+WARNING: [Synth 8-5788] Register i2c_sclk_reg in module APD_i2c_bit_shifter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/APD_i2c_bit_shifter.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'APD_i2c_bit_shifter' (17#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/APD_i2c_bit_shifter.v:1]
+WARNING: [Synth 8-5788] Register cnt_reg in module APD_i2c_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/APD_i2c_control.v:155]
+WARNING: [Synth 8-5788] Register RW_Done_reg in module APD_i2c_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/APD_i2c_control.v:157]
+WARNING: [Synth 8-5788] Register Color_data_reg in module APD_i2c_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/APD_i2c_control.v:328]
+INFO: [Synth 8-6155] done synthesizing module 'APD_i2c_control' (18#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/APD_i2c_control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'APD_drive' (19#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/APD_drive.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LM75A_drive' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_drive.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Read_clock_of_LM75A' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Read_clock_of_LM75A.v:1]
+	Parameter DELAY bound to: 33333333 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Read_clock_of_LM75A' (20#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Read_clock_of_LM75A.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LM75A_i2c_control' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_i2c_control.v:1]
+	Parameter lm75a_address bound to: 7'b1001000 
+	Parameter WR bound to: 6'b000001 
+	Parameter STA bound to: 6'b000010 
+	Parameter RD bound to: 6'b000100 
+	Parameter STO bound to: 6'b001000 
+	Parameter ACK bound to: 6'b010000 
+	Parameter NACK bound to: 6'b100000 
+	Parameter IDLE bound to: 7'b0000001 
+	Parameter WR_REG bound to: 7'b0000010 
+	Parameter WAIT_WR_DONE bound to: 7'b0000100 
+	Parameter WR_REG_DONE bound to: 7'b0001000 
+	Parameter RD_REG bound to: 7'b0010000 
+	Parameter WAIT_RD_DONE bound to: 7'b0100000 
+	Parameter RD_REG_DONE bound to: 7'b1000000 
+INFO: [Synth 8-6157] synthesizing module 'LM75A_i2c_bit_shifter' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_i2c_bit_shifter.v:1]
+	Parameter SYS_CLOCK bound to: 33333333 - type: integer 
+	Parameter SCL_CLOCK bound to: 400000 - type: integer 
+	Parameter SCL_CNT_M bound to: 19 - type: integer 
+	Parameter WR bound to: 6'b000001 
+	Parameter STA bound to: 6'b000010 
+	Parameter RD bound to: 6'b000100 
+	Parameter STO bound to: 6'b001000 
+	Parameter ACK bound to: 6'b010000 
+	Parameter NACK bound to: 6'b100000 
+	Parameter IDLE bound to: 8'b00000001 
+	Parameter GEN_STA bound to: 8'b00000010 
+	Parameter WR_DATA bound to: 8'b00000100 
+	Parameter RD_DATA bound to: 8'b00001000 
+	Parameter CHECK_ACK bound to: 8'b00010000 
+	Parameter GEN_ACK bound to: 8'b00100000 
+	Parameter GEN_STO bound to: 8'b01000000 
+INFO: [Synth 8-226] default block is never used [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_i2c_bit_shifter.v:152]
+INFO: [Synth 8-226] default block is never used [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_i2c_bit_shifter.v:213]
+WARNING: [Synth 8-5788] Register i2c_sclk_reg in module LM75A_i2c_bit_shifter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_i2c_bit_shifter.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'LM75A_i2c_bit_shifter' (21#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_i2c_bit_shifter.v:1]
+WARNING: [Synth 8-6014] Unused sequential element temp_in_Lreg_reg was removed.  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_i2c_control.v:124]
+WARNING: [Synth 8-6014] Unused sequential element data_LM75A_reg was removed.  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_i2c_control.v:137]
+WARNING: [Synth 8-5788] Register cnt_reg in module LM75A_i2c_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_i2c_control.v:86]
+WARNING: [Synth 8-5788] Register RW_Done_reg in module LM75A_i2c_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_i2c_control.v:88]
+WARNING: [Synth 8-5788] Register temp_in_Mreg_reg in module LM75A_i2c_control is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_i2c_control.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'LM75A_i2c_control' (22#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_i2c_control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'LM75A_drive' (23#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/LM75A_drive.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sonic_digital' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/sonic_digital.v:1]
+	Parameter CNT_clk_1KHz bound to: 166666 - type: integer 
+	Parameter CNT_clk_4KHz bound to: 41666 - type: integer 
+	Parameter ZERO bound to: 8'b00111111 
+	Parameter ONE bound to: 8'b00000110 
+	Parameter TWO bound to: 8'b01011011 
+	Parameter THREE bound to: 8'b01001111 
+	Parameter FOUR bound to: 8'b01100110 
+	Parameter FIVE bound to: 8'b01101101 
+	Parameter SIX bound to: 8'b01111101 
+	Parameter SEVEN bound to: 8'b00000111 
+	Parameter EIGHT bound to: 8'b01111111 
+	Parameter NINE bound to: 8'b01101111 
+	Parameter A bound to: 8'b01110111 
+	Parameter B bound to: 8'b01111100 
+	Parameter C bound to: 8'b00111001 
+	Parameter D bound to: 8'b01011110 
+	Parameter E bound to: 8'b01111001 
+	Parameter F bound to: 8'b01110001 
+INFO: [Synth 8-6155] done synthesizing module 'sonic_digital' (24#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/sonic_digital.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Sense_top' (25#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Sense_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sonic' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/sonic.v:1]
+	Parameter SYS_CLK bound to: 33333333 - type: integer 
+	Parameter CLK_17KHz bound to: 17000 - type: integer 
+	Parameter CNT_300MS bound to: 10000000 - type: integer 
+	Parameter CNT_15US bound to: 500 - type: integer 
+	Parameter CNT_17K bound to: 1960 - type: integer 
+WARNING: [Synth 8-5788] Register Echo_delay1_reg in module sonic is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/sonic.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'sonic' (26#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/sonic.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (27#1) [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 823.707 ; gain = 551.508
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Wheel_Instruction_Analysis5:rddata[7] to constant 0 [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_Arm_Motor.v:98]
+WARNING: [Synth 8-3295] tying undriven pin Wheel_Instruction_Analysis5:rddata[6] to constant 0 [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_Arm_Motor.v:98]
+WARNING: [Synth 8-3295] tying undriven pin Wheel_Instruction_Analysis5:rddata[5] to constant 0 [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_Arm_Motor.v:98]
+WARNING: [Synth 8-3295] tying undriven pin Wheel_Instruction_Analysis5:rddata[4] to constant 0 [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_Arm_Motor.v:98]
+WARNING: [Synth 8-3295] tying undriven pin Wheel_Instruction_Analysis5:rddata[3] to constant 0 [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_Arm_Motor.v:98]
+WARNING: [Synth 8-3295] tying undriven pin Wheel_Instruction_Analysis5:rddata[2] to constant 0 [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_Arm_Motor.v:98]
+WARNING: [Synth 8-3295] tying undriven pin Wheel_Instruction_Analysis5:rddata[1] to constant 0 [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_Arm_Motor.v:98]
+WARNING: [Synth 8-3295] tying undriven pin Wheel_Instruction_Analysis5:rddata[0] to constant 0 [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_Arm_Motor.v:98]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 823.707 ; gain = 551.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 823.707 ; gain = 551.508
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_const.xdc]
+Finished Parsing XDC File [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Top_const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1104.918 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1104.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1104.918 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1104.918 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1104.918 ; gain = 832.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1104.918 ; gain = 832.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1104.918 ; gain = 832.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_byte_pre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bps_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "START_BIT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "STOP_BIT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "arm_id" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "arm_cmd" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "motor_cmd_data" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "cmd_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cmd_flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "cnt_l" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cnt_m" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "cnt_e" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "cnt_e" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dance_valid" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dance_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_bit_shifter'
+INFO: [Synth 8-5546] ROM "Rx_DATA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_oe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_oe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Trans_Done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ack_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "en_div_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'i2c_control_motor_plus'
+INFO: [Synth 8-5546] ROM "Cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "RW_Done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "bps_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_data_tx'
+INFO: [Synth 8-5544] ROM "Tx_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "byte_send_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_byte" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_cal_reg' in module 'arm_cal_m'
+INFO: [Synth 8-5546] ROM "angle_low" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_low" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_low" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_low" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_low" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_low" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_heigh" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_heigh" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_heigh" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_heigh" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_heigh" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "angle_heigh" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "in_low" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "in_low" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "in_low" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "in_low" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "in_heigh" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "in_heigh" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "in_heigh" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_cal" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Rst_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "done_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send_id" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send_en_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Wheel_Instruction_Analysis'
+INFO: [Synth 8-5546] ROM "motor_rddata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rdreg_req" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wrdata" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "addr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wrreg_req" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'switch_reg' in module 'arm_en_module'
+INFO: [Synth 8-5544] ROM "arm_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "switch" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                          0000001 |                          0000001
+                   RESET |                          0000010 |                          0000010
+                   DELAY |                          0000100 |                          0000100
+               RESET_SET |                          0001000 |                          0001000
+                 BLK_SET |                          0010000 |                          0010000
+                    INIT |                          0100000 |                          0100000
+                 DISPLAY |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'main_state_reg' in module 'TFT_driver'
+INFO: [Synth 8-5546] ROM "res" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "blk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "init_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "init_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DELAY_TIME_SET" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_spi_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "byte_addr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "bit_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "sda" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "data_byte_init" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'APD_EN_reg' into 'LM75A_EN_reg' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/Core_of_top.v:29]
+INFO: [Synth 8-5545] ROM "Finish" won't be mapped to RAM because address size (33) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'APD_i2c_bit_shifter'
+INFO: [Synth 8-5546] ROM "Rx_DATA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_oe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_oe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Trans_Done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ack_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "en_div_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'APD_i2c_control'
+INFO: [Synth 8-5546] ROM "Cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Temp_CL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Temp_CH" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Temp_RL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Temp_RH" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Temp_GL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Temp_GH" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Temp_BL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Temp_BH" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rddata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RW_Done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "cnt_delay" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Finish" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'LM75A_i2c_bit_shifter'
+INFO: [Synth 8-5546] ROM "Rx_DATA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_oe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_oe" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sdat_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Trans_Done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ack_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i2c_sclk" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'LM75A_i2c_control'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                         00000001 |                         00000001
+                 GEN_STA |                         00000010 |                         00000010
+                 WR_DATA |                         00000100 |                         00000100
+               CHECK_ACK |                         00010000 |                         00010000
+                 RD_DATA |                         00001000 |                         00001000
+                 GEN_ACK |                         00100000 |                         00100000
+                 GEN_STO |                         01000000 |                         01000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'i2c_bit_shifter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                          0000001 |                          0000001
+                  WR_REG |                          0000010 |                          0000010
+            WAIT_WR_DONE |                          0000100 |                          0000100
+             WR_REG_DONE |                          0001000 |                          0001000
+                  iSTATE |                          0010000 |                          0010000
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'i2c_control_motor_plus'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                               00 |                               00
+                      S1 |                               01 |                               01
+                      S2 |                               10 |                               10
+                      S3 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_data_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                             0001 |                               00
+                      S1 |                             0010 |                               01
+                      S2 |                             0100 |                               10
+                      S3 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_cal_reg' using encoding 'one-hot' in module 'arm_cal_m'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                   DO_WR |                              001 |                              001
+            WAIT_WR_DONE |                              010 |                              010
+                   DO_RD |                              011 |                              011
+            WAIT_RD_DONE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Wheel_Instruction_Analysis'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'switch_reg' using encoding 'sequential' in module 'arm_en_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                         00000001 |                         00000001
+                 GEN_STA |                         00000010 |                         00000010
+                 WR_DATA |                         00000100 |                         00000100
+               CHECK_ACK |                         00010000 |                         00010000
+                 RD_DATA |                         00001000 |                         00001000
+                 GEN_ACK |                         00100000 |                         00100000
+                 GEN_STO |                         01000000 |                         01000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'APD_i2c_bit_shifter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                          0000001 |                          0000001
+                  RD_REG |                          0010000 |                          0010000
+            WAIT_RD_DONE |                          0100000 |                          0100000
+             RD_REG_DONE |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'APD_i2c_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                         00000001 |                         00000001
+                 GEN_STA |                         00000010 |                         00000010
+                 WR_DATA |                         00000100 |                         00000100
+               CHECK_ACK |                         00010000 |                         00010000
+                 RD_DATA |                         00001000 |                         00001000
+                 GEN_ACK |                         00100000 |                         00100000
+                 GEN_STO |                         01000000 |                         01000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'LM75A_i2c_bit_shifter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                          0000001 |                          0000001
+                  RD_REG |                          0010000 |                          0010000
+            WAIT_RD_DONE |                          0100000 |                          0100000
+             RD_REG_DONE |                          1000000 |                          1000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'LM75A_i2c_control'
+WARNING: [Synth 8-327] inferring latch for variable 'sel_reg' [E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/SRC/sonic_digital.v:84]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 41    
+	   6 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 14    
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               80 Bit    Registers := 2     
+	               64 Bit    Registers := 2     
+	               33 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 2     
+	               20 Bit    Registers := 3     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	               11 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 66    
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 14    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 72    
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   4 Input     80 Bit        Muxes := 1     
+	   2 Input     80 Bit        Muxes := 6     
+	   2 Input     33 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	  19 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
+	   7 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 4     
+	   6 Input     19 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	   6 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   6 Input      9 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	  78 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 154   
+	   4 Input      8 Bit        Muxes := 33    
+	   3 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 32    
+	   7 Input      8 Bit        Muxes := 41    
+	  15 Input      8 Bit        Muxes := 2     
+	  36 Input      8 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 16    
+	   8 Input      7 Bit        Muxes := 5     
+	   6 Input      7 Bit        Muxes := 1     
+	  36 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 2     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	   8 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 2     
+	  36 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 20    
+	   8 Input      5 Bit        Muxes := 3     
+	   5 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 30    
+	   4 Input      4 Bit        Muxes := 3     
+	  19 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 18    
+	  15 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  17 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 9     
+	  15 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 214   
+	   4 Input      1 Bit        Muxes := 109   
+	   3 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 52    
+	   5 Input      1 Bit        Muxes := 67    
+	   7 Input      1 Bit        Muxes := 15    
+	  15 Input      1 Bit        Muxes := 17    
+	   6 Input      1 Bit        Muxes := 7     
+	  36 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module uart_byte_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 10    
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 10    
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 4     
+Module Bus_arm_motor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 17    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	  19 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 21    
+	   4 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 8     
+	   4 Input      4 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
+	  17 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 54    
+	   3 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+Module i2c_bit_shifter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 4     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 15    
+	   8 Input      1 Bit        Muxes := 13    
+Module i2c_control_motor_plus 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   8 Input      6 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 8     
+Module uart_byte_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   6 Input     13 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module uart_data_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               80 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     80 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 7     
+Module arm_cal_m 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 37    
+	   6 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               80 Bit    Registers := 1     
+	                8 Bit    Registers := 17    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     80 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 130   
+	   7 Input      8 Bit        Muxes := 41    
+	   3 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 28    
+	   4 Input      8 Bit        Muxes := 28    
+	   8 Input      8 Bit        Muxes := 2     
+	  15 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 2     
+	  15 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 69    
+	   7 Input      1 Bit        Muxes := 14    
+	   5 Input      1 Bit        Muxes := 19    
+	  15 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 41    
+Module Wheel_Instruction_Analysis 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 10    
+Module arm_en_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 8     
+Module TFT_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               19 Bit    Registers := 1     
+	                7 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 4     
+	   6 Input     19 Bit        Muxes := 1     
+	  78 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 5     
+	   6 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 7     
+	   7 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 10    
+Module single_ROM2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Core_of_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Read_clock_of_APD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 2     
+Module APD_i2c_bit_shifter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 15    
+	   8 Input      1 Bit        Muxes := 13    
+Module APD_i2c_control 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 2     
+	                8 Bit    Registers := 15    
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	  36 Input      8 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	  36 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  36 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	  36 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 19    
+Module Read_clock_of_LM75A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module LM75A_i2c_bit_shifter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 15    
+	   8 Input      1 Bit        Muxes := 13    
+Module LM75A_i2c_control 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 11    
+Module sonic_digital 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module sonic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "cnt_e" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "in_low" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_cal" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arm_en" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "Read_clock_of_APD3/Finish" won't be mapped to RAM because address size (33) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Read_clock_of_LM75A1/cnt_delay" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Read_clock_of_LM75A1/Finish" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_heigh_reg[7]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_heigh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_heigh_reg[6]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_heigh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_heigh_reg[5]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_heigh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_heigh_reg[4]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_heigh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_heigh_reg[3]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_heigh_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_heigh_reg[2]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_low_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[15]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_low_reg[7]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_low_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[14]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_low_reg[6]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_low_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[13]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_low_reg[5]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_low_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[12]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[11]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_low_reg[3]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_low_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[10]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_low_reg[1]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/time_low_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\time_low_reg[0] )
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[23]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[22]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[21]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[19]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[17]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[16]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[47]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[0]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[1]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[2]' (FDP) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[47]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[46]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[46]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[45]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[45]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[44]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[44]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[43]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[43]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[42]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[42]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[41]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[41]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[55]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[40]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[50]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[3]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[4]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[5]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[6]' (FDP) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[7]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[8]' (FDP) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[9]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[10]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[11]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[12]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[13]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[14]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/uart_byte_rx1/bps_DR_reg[15]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[55]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[54]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[54]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[53]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[53]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[52]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[52]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[51]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[51]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[71]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[50]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[49]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[49]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[48]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[48]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[70]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[71]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[69]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[70]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[68]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[69]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[67]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[68]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[66]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[67]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[65]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[66]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[64]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[65]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[79]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[64]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[78]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[0]' (FDP) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[1]' (FDP) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[2]' (FDP) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[79]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[77]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[78]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[76]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[77]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[75]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[76]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[74]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[75]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[73]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[74]' (FDE) to 'Top_Arm_Motor3/Arm4/arm_cal_m2/data_out_reg[72]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\data_out_reg[73] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\data_out_reg[72] )
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[3]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[4]' (FDP) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[5]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[6]' (FDP) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[7]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[9]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[10]' (FDP) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[11]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[13]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[14]' (FDC) to 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_DR_reg[15]' (FDC) to 'Top_Arm_Motor3/i2c_control_motor_plus3/i2c_bit_shifter1/div_cnt_reg[19]'
+INFO: [Synth 8-3886] merging instance 'Sense_top6/APD_drive1/APD_i2c_control3/state_reg[1]' (FDCE) to 'Sense_top6/APD_drive1/APD_i2c_control3/state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Sense_top6/APD_drive1/APD_i2c_control3/state_reg[3]' (FDCE) to 'Sense_top6/APD_drive1/APD_i2c_control3/state_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Sense_top6/\APD_drive1/APD_i2c_control3/state_reg[2] )
+INFO: [Synth 8-3886] merging instance 'Sense_top6/APD_drive1/APD_i2c_control3/cnt_reg[7]' (FDE) to 'Sense_top6/APD_drive1/APD_i2c_control3/cnt_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Sense_top6/\APD_drive1/APD_i2c_control3/cnt_reg[6] )
+INFO: [Synth 8-3886] merging instance 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/state_reg[1]' (FDCE) to 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/state_reg[3]' (FDCE) to 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/state_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Sense_top6/\LM75A_drive2/LM75A_i2c_control2/state_reg[2] )
+INFO: [Synth 8-3886] merging instance 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/cnt_reg[7]' (FDE) to 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/cnt_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/cnt_reg[6]' (FDE) to 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/cnt_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/cnt_reg[5]' (FDE) to 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/cnt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/cnt_reg[4]' (FDE) to 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/cnt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/cnt_reg[3]' (FDE) to 'Sense_top6/LM75A_drive2/LM75A_i2c_control2/cnt_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Sense_top6/\LM75A_drive2/LM75A_i2c_control2/cnt_reg[2] )
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Bus_arm_motor2/motor_id_reg[7]' (FDE) to 'Top_Arm_Motor3/Bus_arm_motor2/motor_id_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Bus_arm_motor2/motor_id_reg[6]' (FDE) to 'Top_Arm_Motor3/Bus_arm_motor2/motor_id_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Bus_arm_motor2/motor_id_reg[5]' (FDE) to 'Top_Arm_Motor3/Bus_arm_motor2/motor_id_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Bus_arm_motor2/motor_id_reg[4]' (FDE) to 'Top_Arm_Motor3/Bus_arm_motor2/motor_id_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Bus_arm_motor2/motor_id_reg[2]' (FDE) to 'Top_Arm_Motor3/Bus_arm_motor2/motor_id_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/Bus_arm_motor2/motor_id_reg[1]' (FDE) to 'Top_Arm_Motor3/Bus_arm_motor2/motor_id_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Top_Arm_Motor3/\Bus_arm_motor2/motor_id_reg[0] )
+INFO: [Synth 8-3886] merging instance 'Top_Arm_Motor3/i2c_control_motor_plus3/state_reg[6]' (FDCE) to 'Top_Arm_Motor3/i2c_control_motor_plus3/state_reg[5]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Top_Arm_Motor3/\i2c_control_motor_plus3/state_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Top_Arm_Motor3/\i2c_control_motor_plus3/cnt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Sense_top6/\APD_drive1/APD_i2c_control3/Cmd_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Sense_top6/\LM75A_drive2/LM75A_i2c_control2/Tx_DATA_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Top_Arm_Motor3/\i2c_control_motor_plus3/Cmd_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Sense_top6/\sonic_digital3/cnt_timer_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Sense_top6/\APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/state_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Sense_top6/\LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/state_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Top_Arm_Motor3/\i2c_control_motor_plus3/i2c_bit_shifter1/state_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Top_Arm_Motor3/\i2c_control_motor_plus3/i2c_bit_shifter1/div_cnt_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Sense_top6/\sonic_digital3/led_data_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Sense_top6/\sonic_digital3/sel_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (sonic_digital3/sel_reg[2]) is unused and will be removed from module Sense_top.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TFT_top6/TFT_driver3 /\DELAY_TIME_SET_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TFT_top6/TFT_driver3 /\DELAY_TIME_SET_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TFT_top6/TFT_driver3 /\delay_time_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\data_out_reg[7]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\data_out_reg[6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\data_out_reg[5]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\data_out_reg[4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\data_out_reg[3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\data_out_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\data_out_reg[1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\data_out_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\send_id_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Top_Arm_Motor3/\arm_en_module6/length_reg[1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Top_Arm_Motor3/\arm_en_module6/length_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Top_Arm_Motor3/\arm_en_module6/length_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Top_Arm_Motor3/\Arm4/arm_cal_m2 /\data_out_reg[59] )
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[7]_LDC) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[7]_C) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[6]_LDC) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[6]_C) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[5]_LDC) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[5]_C) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[4]_LDC) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[4]_C) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[3]_LDC) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[3]_C) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[2]_LDC) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[2]_C) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[1]_LDC) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[1]_C) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[0]_LDC) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (data_out_reg[0]_C) is unused and will be removed from module arm_cal_m.
+WARNING: [Synth 8-3332] Sequential element (arm_en_module6/length_reg[2]_LDC) is unused and will be removed from module Top_Arm_Motor.
+WARNING: [Synth 8-3332] Sequential element (arm_en_module6/length_reg[2]_C) is unused and will be removed from module Top_Arm_Motor.
+WARNING: [Synth 8-3332] Sequential element (arm_en_module6/length_reg[1]_LDC) is unused and will be removed from module Top_Arm_Motor.
+WARNING: [Synth 8-3332] Sequential element (arm_en_module6/length_reg[1]_C) is unused and will be removed from module Top_Arm_Motor.
+WARNING: [Synth 8-3332] Sequential element (arm_en_module6/length_reg[0]_LDC) is unused and will be removed from module Top_Arm_Motor.
+WARNING: [Synth 8-3332] Sequential element (arm_en_module6/length_reg[0]_C) is unused and will be removed from module Top_Arm_Motor.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:20 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------+--------------------------+---------------+----------------+
+|Module Name     | RTL Object               | Depth x Width | Implemented As | 
++----------------+--------------------------+---------------+----------------+
+|single_ROM2     | q_reg                    | 524288x8      | Block RAM      | 
+|APD_i2c_control | Tx_DATA                  | 256x1         | LUT            | 
+|TFT_driver      | data_byte_init           | 128x9         | LUT            | 
+|APD_drive       | APD_i2c_control3/cnt     | 64x8          | LUT            | 
+|APD_drive       | APD_i2c_control3/Tx_DATA | 256x1         | LUT            | 
+|APD_drive       | APD_i2c_control3/Tx_DATA | 64x8          | LUT            | 
++----------------+--------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_5_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_5_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_5_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_5_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_5_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_5_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_5_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_5_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_7_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_7_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_7_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_7_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_7_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_7_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_7_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_7_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_9_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_9_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_9_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_9_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_9_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_9_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_9_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_9_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_11_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_11_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_11_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_11_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_11_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_11_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_11_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_11_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_13_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_13_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_13_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_13_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_13_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_13_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_13_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_13_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_15_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_15_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_15_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_15_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_15_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_15_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_15_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6i_0/TFT_top6/single_ROM22/q_reg_15_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_5_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_5_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_5_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_5_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_5_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_5_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_5_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_5_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_7_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_7_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_7_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_7_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_7_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_7_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_7_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_7_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_9_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_9_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_9_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance TFT_top6/single_ROM22/q_reg_9_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-6837' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Top         | Top_Arm_Motor3/Arm4/uart_data_tx2/data_r_reg[79] | 5      | 3     | YES          | NO                 | YES               | 3      | 0       | 
++------------+--------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     1|
+|2     |CARRY4      |    77|
+|3     |LUT1        |    25|
+|4     |LUT2        |   207|
+|5     |LUT3        |   274|
+|6     |LUT4        |   350|
+|7     |LUT5        |   411|
+|8     |LUT6        |   760|
+|9     |MUXF7       |    37|
+|10    |RAMB36E1    |    24|
+|11    |RAMB36E1_1  |     1|
+|12    |RAMB36E1_10 |     1|
+|13    |RAMB36E1_11 |     1|
+|14    |RAMB36E1_12 |     1|
+|15    |RAMB36E1_13 |     1|
+|16    |RAMB36E1_14 |     1|
+|17    |RAMB36E1_15 |     1|
+|18    |RAMB36E1_16 |     1|
+|19    |RAMB36E1_17 |     1|
+|20    |RAMB36E1_18 |     1|
+|21    |RAMB36E1_19 |     1|
+|22    |RAMB36E1_2  |     1|
+|23    |RAMB36E1_20 |     1|
+|24    |RAMB36E1_21 |     1|
+|25    |RAMB36E1_22 |     1|
+|26    |RAMB36E1_23 |     1|
+|27    |RAMB36E1_24 |     1|
+|28    |RAMB36E1_25 |     1|
+|29    |RAMB36E1_26 |     1|
+|30    |RAMB36E1_27 |     1|
+|31    |RAMB36E1_28 |     1|
+|32    |RAMB36E1_29 |     1|
+|33    |RAMB36E1_3  |     1|
+|34    |RAMB36E1_30 |     1|
+|35    |RAMB36E1_31 |     1|
+|36    |RAMB36E1_32 |     1|
+|37    |RAMB36E1_33 |     1|
+|38    |RAMB36E1_34 |     1|
+|39    |RAMB36E1_35 |     1|
+|40    |RAMB36E1_36 |     1|
+|41    |RAMB36E1_37 |     1|
+|42    |RAMB36E1_38 |     1|
+|43    |RAMB36E1_39 |     1|
+|44    |RAMB36E1_4  |     1|
+|45    |RAMB36E1_40 |     1|
+|46    |RAMB36E1_41 |     1|
+|47    |RAMB36E1_42 |     1|
+|48    |RAMB36E1_43 |     1|
+|49    |RAMB36E1_44 |     1|
+|50    |RAMB36E1_45 |     1|
+|51    |RAMB36E1_46 |     1|
+|52    |RAMB36E1_47 |     1|
+|53    |RAMB36E1_48 |     1|
+|54    |RAMB36E1_49 |     1|
+|55    |RAMB36E1_5  |     1|
+|56    |RAMB36E1_50 |     1|
+|57    |RAMB36E1_51 |     1|
+|58    |RAMB36E1_52 |     1|
+|59    |RAMB36E1_53 |     1|
+|60    |RAMB36E1_54 |     1|
+|61    |RAMB36E1_55 |     1|
+|62    |RAMB36E1_56 |     1|
+|63    |RAMB36E1_57 |     1|
+|64    |RAMB36E1_58 |     1|
+|65    |RAMB36E1_59 |     1|
+|66    |RAMB36E1_6  |     1|
+|67    |RAMB36E1_60 |     1|
+|68    |RAMB36E1_61 |     1|
+|69    |RAMB36E1_62 |     1|
+|70    |RAMB36E1_63 |     1|
+|71    |RAMB36E1_64 |     1|
+|72    |RAMB36E1_65 |     1|
+|73    |RAMB36E1_66 |     1|
+|74    |RAMB36E1_67 |     1|
+|75    |RAMB36E1_68 |     1|
+|76    |RAMB36E1_69 |     1|
+|77    |RAMB36E1_7  |     1|
+|78    |RAMB36E1_70 |     1|
+|79    |RAMB36E1_71 |     1|
+|80    |RAMB36E1_72 |     1|
+|81    |RAMB36E1_73 |    16|
+|82    |RAMB36E1_74 |     8|
+|83    |RAMB36E1_75 |     8|
+|84    |RAMB36E1_8  |     1|
+|85    |RAMB36E1_9  |     1|
+|86    |SRL16E      |     3|
+|87    |FDCE        |   810|
+|88    |FDPE        |    55|
+|89    |FDRE        |   266|
+|90    |FDSE        |    12|
+|91    |LDP         |     3|
+|92    |IBUF        |     5|
+|93    |IOBUF       |     3|
+|94    |OBUF        |    26|
++------+------------+------+
+
+Report Instance Areas: 
++------+--------------------------------+---------------------------+------+
+|      |Instance                        |Module                     |Cells |
++------+--------------------------------+---------------------------+------+
+|1     |top                             |                           |  3453|
+|2     |  Sense_top6                    |Sense_top                  |   713|
+|3     |    APD_drive1                  |APD_drive                  |   393|
+|4     |      APD_i2c_control3          |APD_i2c_control            |   309|
+|5     |        APD_i2c_bit_shifter2    |APD_i2c_bit_shifter        |   115|
+|6     |      Read_clock_of_APD3        |Read_clock_of_APD          |    84|
+|7     |    LM75A_drive2                |LM75A_drive                |   231|
+|8     |      LM75A_i2c_control2        |LM75A_i2c_control          |   149|
+|9     |        LM75A_i2c_bit_shifter2  |LM75A_i2c_bit_shifter      |    99|
+|10    |      Read_clock_of_LM75A1      |Read_clock_of_LM75A        |    82|
+|11    |    sonic_digital3              |sonic_digital              |    89|
+|12    |  TFT_top6                      |TFT_top                    |   438|
+|13    |    TFT_driver3                 |TFT_driver                 |   275|
+|14    |    single_ROM22                |single_ROM2                |   163|
+|15    |  Top_Arm_Motor3                |Top_Arm_Motor              |  1983|
+|16    |    Arm4                        |Arm                        |  1147|
+|17    |      arm_cal_m2                |arm_cal_m                  |   915|
+|18    |      uart_data_tx2             |uart_data_tx               |   228|
+|19    |        uart_byte_tx1           |uart_byte_tx               |    78|
+|20    |    Bus_arm_motor2              |Bus_arm_motor              |   367|
+|21    |    Wheel_Instruction_Analysis5 |Wheel_Instruction_Analysis |   136|
+|22    |    arm_en_module6              |arm_en_module              |     8|
+|23    |    i2c_control_motor_plus3     |i2c_control_motor_plus     |   156|
+|24    |      i2c_bit_shifter1          |i2c_bit_shifter            |   115|
+|25    |    uart_byte_rx1               |uart_byte_rx               |   169|
+|26    |  sonic5                        |sonic                      |   143|
+|27    |  sonic6                        |sonic_0                    |   141|
++------+--------------------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:28 ; elapsed = 00:01:32 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 1537.504 ; gain = 984.094
+Synthesis Optimization Complete : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 1537.504 ; gain = 1265.305
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 248 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1537.504 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  LDP => LDPE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+490 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1537.504 ; gain = 1278.633
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1537.504 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/CodeFile/JueSai/CICC1054/Vivado_prj/TOP/TOP.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 10:26:27 2024...

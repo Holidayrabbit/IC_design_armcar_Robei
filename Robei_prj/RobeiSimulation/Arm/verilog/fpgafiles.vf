@@ -1,0 +1,6 @@
+`include "E:/CodeFile/Fusai/BAJIAOBAN/Top_Final/RobeiSimulation/Arm/verilog/Arm.v"
+`include "E:/CodeFile/Fusai/BAJIAOBAN/Top_Final/RobeiSimulation/Arm/verilog/arm_cal_m.v"
+`include "E:/CodeFile/Fusai/BAJIAOBAN/Top_Final/RobeiSimulation/Arm/verilog/arm_test.v"
+`include "E:/CodeFile/Fusai/BAJIAOBAN/Top_Final/RobeiSimulation/Arm/verilog/uart_byte_tx.v"
+`include "E:/CodeFile/Fusai/BAJIAOBAN/Top_Final/RobeiSimulation/Arm/verilog/uart_data_tx.v"
+

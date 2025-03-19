@@ -1,0 +1,155 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Aug 19 10:27:15 2024
+| Host         : LAPTOP-B9H06694 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    81 |
+| Unused register locations in slices containing registers |   182 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            7 |
+|      2 |            1 |
+|      3 |            3 |
+|      4 |           10 |
+|      5 |            5 |
+|      6 |            1 |
+|      7 |            7 |
+|      8 |           20 |
+|     11 |            1 |
+|     15 |            5 |
+|    16+ |           21 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              24 |           11 |
+| No           | No                    | Yes                    |             367 |          145 |
+| No           | Yes                   | No                     |              19 |            6 |
+| Yes          | No                    | No                     |             189 |           41 |
+| Yes          | No                    | Yes                    |             498 |          192 |
+| Yes          | Yes                   | No                     |              49 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+|                  Clock Signal                 |                                      Enable Signal                                      |                              Set/Reset Signal                              | Slice Load Count | Bel Load Count |
++-----------------------------------------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+|  Clk_IBUF_BUFG                                | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/i2c_sclk0_out         |                                                                            |                1 |              1 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/i2c_control_motor_plus3/i2c_bit_shifter1/i2c_sclk0_out                   |                                                                            |                1 |              1 |
+|  Clk_IBUF_BUFG                                | TFT_top6/TFT_driver3/dcx_i_1_n_0                                                        | TFT_top6/TFT_driver3/sda_i_3_n_0                                           |                1 |              1 |
+|  Clk_IBUF_BUFG                                | TFT_top6/TFT_driver3/sda0                                                               | TFT_top6/TFT_driver3/sda_i_3_n_0                                           |                1 |              1 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Bus_arm_motor2/FSM_onehot_state_cal_reg[0]                               | Top_Arm_Motor3/Arm4/Rst_n                                                  |                1 |              1 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/arm_en_module6/arm_en_i_1_n_0                                            | Sense_top6/sonic_digital3/Rst_n                                            |                1 |              1 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/i2c_sclk0_out               |                                                                            |                1 |              1 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/state_reg[4]_0              |                                                                            |                1 |              2 |
+|  TFT_top6/TFT_driver3/clka                    |                                                                                         |                                                                            |                1 |              3 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/state_reg[4]_0              | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/state_reg[5]_0 |                2 |              3 |
+|  Sense_top6/sonic_digital3/sel_reg[3]_i_2_n_0 |                                                                                         | Sense_top6/sonic_digital3/Rst_n                                            |                2 |              3 |
+|  Clk_IBUF_BUFG                                | Sense_top6/LM75A_drive2/LM75A_i2c_control2/Cmd                                          | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/Rst_n    |                1 |              4 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Bus_arm_motor2/FSM_onehot_state_cal_reg[0]                               | Top_Arm_Motor3/Arm4/Rst_n_0                                                |                2 |              4 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/FSM_onehot_state_cal[3]_i_1_n_0                          | Top_Arm_Motor3/Arm4/Rst_n_0                                                |                1 |              4 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Bus_arm_motor2/cnt_e[3]_i_1_n_0                                          | Top_Arm_Motor3/Arm4/Rst_n                                                  |                1 |              4 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/E[0]                        | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/Rst_n          |                3 |              4 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/delay                                                    | Top_Arm_Motor3/Arm4/Rst_n_0                                                |                1 |              4 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/time_heigh[1]_i_1_n_0                                    |                                                                            |                1 |              4 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/bps_cnt[3]_i_1__0_n_0                   | Top_Arm_Motor3/Arm4/AR[0]                                                  |                1 |              4 |
+|  Clk_IBUF_BUFG                                | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/E[0]                  | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/Rst_n    |                1 |              4 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/Cmd                                              | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/Rst_n          |                1 |              4 |
+|  Clk_IBUF_BUFG                                | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/cnt                   | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/Rst_n    |                2 |              5 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/i2c_control_motor_plus3/i2c_bit_shifter1/cnt                             | Top_Arm_Motor3/Arm4/Rst_n                                                  |                3 |              5 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/cnt                         | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/Rst_n          |                1 |              5 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/i2c_control_motor_plus3/i2c_bit_shifter1/E[0]                            | Top_Arm_Motor3/Arm4/Rst_n                                                  |                3 |              5 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Bus_arm_motor2/dance_length[4]_i_1_n_0                                   | Top_Arm_Motor3/Arm4/Rst_n                                                  |                2 |              5 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/uart_data_tx2/uart_byte_tx1/E[0]                                    | Top_Arm_Motor3/Arm4/AR[0]                                                  |                2 |              6 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Wheel_Instruction_Analysis5/data_cnt                                     | Top_Arm_Motor3/Arm4/Rst_n                                                  |                2 |              7 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/i2c_control_motor_plus3/i2c_bit_shifter1/state[6]_i_1_n_0                | Top_Arm_Motor3/Arm4/Rst_n                                                  |                5 |              7 |
+|  Clk_IBUF_BUFG                                | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/state[6]_i_1__2_n_0   | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/Rst_n    |                3 |              7 |
+|  Clk_IBUF_BUFG                                | TFT_top6/TFT_driver3/wait_cnt[6]_i_1_n_0                                                | TFT_top6/TFT_driver3/sda_i_3_n_0                                           |                4 |              7 |
+|  Clk_IBUF_BUFG                                | TFT_top6/TFT_driver3/delay_cnt                                                          | TFT_top6/TFT_driver3/sda_i_3_n_0                                           |                3 |              7 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/state[6]_i_1__0_n_0         | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/Rst_n          |                3 |              7 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/Tx_DATA                                          | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/Rst_n          |                3 |              7 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/Q[1]                                                     |                                                                            |                2 |              8 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/Rst_length[7]_i_1_n_0                                    | Top_Arm_Motor3/Arm4/Rst_n_0                                                |                5 |              8 |
+|  Clk_IBUF_BUFG                                |                                                                                         | Top_Arm_Motor3/Arm4/Rst_n_0                                                |                6 |              8 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/uart_data_tx2/data_byte[7]_i_1_n_0                                  | Top_Arm_Motor3/Arm4/AR[0]                                                  |                1 |              8 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Wheel_Instruction_Analysis5/addr[7]_i_1_n_0                              | Top_Arm_Motor3/Arm4/Rst_n                                                  |                2 |              8 |
+|  Clk_IBUF_BUFG                                | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/Rx_DATA[7]_i_1__0_n_0 | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/Rst_n    |                2 |              8 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Bus_arm_motor2/cnt_m[7]_i_1_n_0                                          | Top_Arm_Motor3/Arm4/Rst_n                                                  |                3 |              8 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/cnt_reg[2]_0[0]             | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/Rst_n          |                1 |              8 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/cnt_reg[2]_1[0]             | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/Rst_n          |                1 |              8 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Bus_arm_motor2/cnt_l[7]_i_1_n_0                                          | Top_Arm_Motor3/Arm4/Rst_n                                                  |                3 |              8 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Bus_arm_motor2/cnt_h[7]_i_1_n_0                                          | Top_Arm_Motor3/Arm4/Rst_n                                                  |                4 |              8 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/Rx_DATA[7]_i_1_n_0          | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/Rst_n          |                2 |              8 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/uart_data_tx2/byte_send_en_reg_n_0                                  | Top_Arm_Motor3/Arm4/AR[0]                                                  |                2 |              8 |
+|  Clk_IBUF_BUFG                                | Sense_top6/LM75A_drive2/LM75A_i2c_control2/rddata[7]_i_1_n_0                            | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/Rst_n    |                2 |              8 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/uart_data_tx2/data_r[58]_i_1_n_0                                    | Top_Arm_Motor3/Arm4/uart_data_tx2/data_r[7]_i_1_n_0                        |                1 |              8 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/cnt_reg[0]_0[0]             | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/Rst_n          |                1 |              8 |
+|  Clk_IBUF_BUFG                                | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/cnt_reg[1]_0[0]       |                                                                            |                2 |              8 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/cnt_reg[1]_0[0]             | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/Rst_n          |                1 |              8 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/uart_byte_rx1/bps_cnt[7]_i_1_n_0                                         | Top_Arm_Motor3/Arm4/AR[0]                                                  |                4 |              8 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/uart_byte_rx1/rx_done_i_1_n_0                                            | Top_Arm_Motor3/Arm4/AR[0]                                                  |                2 |              8 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/i2c_control_motor_plus3/Cmd                                              | Top_Arm_Motor3/Arm4/Rst_n                                                  |                4 |             11 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/angle_low[4][7]_i_1_n_0                                  | Top_Arm_Motor3/Arm4/Rst_n_0                                                |               11 |             15 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/angle_low[3][7]_i_1_n_0                                  | Top_Arm_Motor3/Arm4/Rst_n_0                                                |               12 |             15 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/angle_low[1][7]_i_1_n_0                                  | Top_Arm_Motor3/Arm4/Rst_n_0                                                |                6 |             15 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/angle_low[2][7]_i_1_n_0                                  | Top_Arm_Motor3/Arm4/Rst_n_0                                                |               10 |             15 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/angle_heigh[5][7]_i_1_n_0                                | Top_Arm_Motor3/Arm4/Rst_n_0                                                |                9 |             15 |
+|  Clk_IBUF_BUFG                                |                                                                                         | TFT_top6/TFT_driver3/clear                                                 |                4 |             16 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/angle_low[0][7]_i_1_n_0                                  | Top_Arm_Motor3/Arm4/Rst_n_0                                                |               11 |             16 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/in_heigh[7]_i_1_n_0                                      | Top_Arm_Motor3/Arm4/AR[0]                                                  |               12 |             16 |
+|  Clk_IBUF_BUFG                                | sonic5/data_length0                                                                     | sonic5/Rst_n                                                               |                4 |             16 |
+|  Clk_IBUF_BUFG                                | sonic6/data_length[0]_i_1__0_n_0                                                        | sonic5/Rst_n                                                               |                4 |             16 |
+|  Clk_IBUF_BUFG                                | TFT_top6/TFT_driver3/byte_addr[18]_i_1_n_0                                              | TFT_top6/TFT_driver3/sda_i_3_n_0                                           |                6 |             19 |
+|  Clk_IBUF_BUFG                                |                                                                                         |                                                                            |               10 |             21 |
+|  Clk_IBUF_BUFG                                |                                                                                         | Top_Arm_Motor3/Arm4/Rst_n                                                  |               12 |             22 |
+|  Clk_IBUF_BUFG                                |                                                                                         | TFT_top6/TFT_driver3/sda_i_3_n_0                                           |               17 |             23 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/arm_cal_m2/data_out[58]_i_1_n_0                                     |                                                                            |                6 |             23 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/uart_data_tx2/data_r[58]_i_1_n_0                                    |                                                                            |                5 |             32 |
+|  Clk_IBUF_BUFG                                | Sense_top6/APD_drive1/APD_i2c_control3/Color_data                                       |                                                                            |                6 |             32 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Wheel_Instruction_Analysis5/wrdata[31]_i_1_n_0                           | Top_Arm_Motor3/Arm4/Rst_n                                                  |                6 |             32 |
+|  Clk_IBUF_BUFG                                |                                                                                         | Sense_top6/sonic_digital3/Rst_n                                            |               12 |             36 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Arm4/uart_data_tx2/data_r[58]_i_1_n_0                                    | Top_Arm_Motor3/Arm4/uart_data_tx2/data_r[73]_i_1_n_0                       |                8 |             38 |
+|  Clk_IBUF_BUFG                                |                                                                                         | Sense_top6/LM75A_drive2/LM75A_i2c_control2/LM75A_i2c_bit_shifter2/Rst_n    |               20 |             45 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/Bus_arm_motor2/arm_cmd_i_1_n_0                                           | Top_Arm_Motor3/Arm4/Rst_n                                                  |                9 |             49 |
+|  Clk_IBUF_BUFG                                |                                                                                         | Top_Arm_Motor3/Arm4/AR[0]                                                  |               20 |             77 |
+|  Clk_IBUF_BUFG                                |                                                                                         | sonic5/Rst_n                                                               |               32 |             78 |
+|  Clk_IBUF_BUFG                                |                                                                                         | Sense_top6/APD_drive1/APD_i2c_control3/APD_i2c_bit_shifter2/Rst_n          |               26 |             78 |
+|  Clk_IBUF_BUFG                                | Top_Arm_Motor3/uart_byte_rx1/E[0]                                                       |                                                                            |               15 |             80 |
++-----------------------------------------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+
+

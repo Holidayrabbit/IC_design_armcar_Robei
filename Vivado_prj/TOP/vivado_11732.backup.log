@@ -1,0 +1,201 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Aug 19 09:45:55 2024
+# Process ID: 11732
+# Current directory: E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10884 E:\CodeFile\JueSai\demoV8\Top_Final_test\vivado\TOP\TOP.xpr
+# Log file: E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/vivado.log
+# Journal file: E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/TOP.xpr
+INFO: [Project 1-313] Project file moved from 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP' since last save.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/APD_drive.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_drive.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/APD_i2c_bit_shifter.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_i2c_bit_shifter.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/APD_i2c_control.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_i2c_control.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Arm.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Arm.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Bus_arm_motor.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Bus_arm_motor.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Core_of_top.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Core_of_top.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/LM75A_drive.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_drive.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_bit_shifter.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_bit_shifter.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_control.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_control.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Read_clock_of_APD.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Read_clock_of_APD.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Read_clock_of_LM75A.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Read_clock_of_LM75A.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Sense_top.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Sense_top.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/TFT_driver.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/TFT_driver.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/TFT_top.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/TFT_top.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Top_Arm_Motor.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Top_Arm_Motor.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Wheel_Instruction_Analysis.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Wheel_Instruction_Analysis.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/arm_cal_m.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/arm_cal_m.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/arm_en_module.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/arm_en_module.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/i2c_bit_shifter.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/i2c_bit_shifter.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/i2c_control_motor_plus.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/i2c_control_motor_plus.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/single_ROM2.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/single_ROM2.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/sonic.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/sonic.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/sonic_digital.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/sonic_digital.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/uart_byte_rx.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_byte_rx.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/uart_byte_tx.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_byte_tx.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/uart_data_tx.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_data_tx.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Top.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Top.v' instead.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/CSB_dri.v', nor could it be found using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/CSB_dri.v'.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/JCS_TOP.xdc'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/JCS_TOP.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/APD_drive.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_drive.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/APD_i2c_bit_shifter.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_i2c_bit_shifter.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/APD_i2c_control.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_i2c_control.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Arm.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Arm.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Bus_arm_motor.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Bus_arm_motor.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Core_of_top.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Core_of_top.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/LM75A_drive.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_drive.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_bit_shifter.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_bit_shifter.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_control.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_control.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Read_clock_of_APD.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Read_clock_of_APD.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Read_clock_of_LM75A.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Read_clock_of_LM75A.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Sense_top.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Sense_top.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/TFT_driver.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/TFT_driver.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/TFT_top.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/TFT_top.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Top_Arm_Motor.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Top_Arm_Motor.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Wheel_Instruction_Analysis.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Wheel_Instruction_Analysis.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/arm_cal_m.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/arm_cal_m.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/arm_en_module.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/arm_en_module.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/i2c_bit_shifter.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/i2c_bit_shifter.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/i2c_control_motor_plus.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/i2c_control_motor_plus.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/single_ROM2.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/single_ROM2.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/sonic.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/sonic.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/sonic_digital.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/sonic_digital.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/uart_byte_rx.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_byte_rx.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/uart_byte_tx.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_byte_tx.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/uart_data_tx.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_data_tx.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Top.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Top.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/JCS_TOP.xdc'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/JCS_TOP.xdc' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/APD_drive.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_drive.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/APD_i2c_bit_shifter.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_i2c_bit_shifter.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/APD_i2c_control.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_i2c_control.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Arm.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Arm.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Bus_arm_motor.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Bus_arm_motor.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Core_of_top.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Core_of_top.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/LM75A_drive.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_drive.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_bit_shifter.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_bit_shifter.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_control.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_control.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Read_clock_of_APD.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Read_clock_of_APD.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Read_clock_of_LM75A.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Read_clock_of_LM75A.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Sense_top.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Sense_top.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/TFT_driver.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/TFT_driver.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/TFT_top.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/TFT_top.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Top_Arm_Motor.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Top_Arm_Motor.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Wheel_Instruction_Analysis.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Wheel_Instruction_Analysis.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/arm_cal_m.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/arm_cal_m.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/arm_en_module.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/arm_en_module.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/i2c_bit_shifter.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/i2c_bit_shifter.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/i2c_control_motor_plus.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/i2c_control_motor_plus.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/single_ROM2.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/single_ROM2.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/sonic.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/sonic.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/sonic_digital.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/sonic_digital.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/uart_byte_rx.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_byte_rx.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/uart_byte_tx.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_byte_tx.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/uart_data_tx.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_data_tx.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Top.v'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Top.v' instead.
+WARNING: [Project 1-312] File not found as 'E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/JCS_TOP.xdc'; using path 'E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/JCS_TOP.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/vivado/vivado/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Top.v] -no_script -reset -force -quiet
+remove_files  E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Top.v
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/JCS_TOP.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/JCS_TOP.xdc
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Top_Arm_Motor.v] -no_script -reset -force -quiet
+remove_files  E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Top_Arm_Motor.v
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Sense_top.v] -no_script -reset -force -quiet
+remove_files  E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Sense_top.v
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/TFT_top.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_drive.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Arm.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_drive.v] -no_script -reset -force -quiet
+remove_files  {E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/TFT_top.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_drive.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Arm.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_drive.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_i2c_control.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_control.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/i2c_control_motor_plus.v] -no_script -reset -force -quiet
+remove_files  {E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_i2c_control.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_control.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/i2c_control_motor_plus.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_bit_shifter.v] -no_script -reset -force -quiet
+remove_files  E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_bit_shifter.v
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_byte_rx.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/sonic_digital.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/sonic.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/single_ROM2.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/i2c_bit_shifter.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/arm_en_module.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/arm_cal_m.v] -no_script -reset -force -quiet
+remove_files  {E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_byte_rx.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/sonic_digital.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/sonic.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/single_ROM2.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/i2c_bit_shifter.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/arm_en_module.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/arm_cal_m.v}
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Wheel_Instruction_Analysis.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/TFT_driver.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Read_clock_of_LM75A.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Read_clock_of_APD.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Core_of_top.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Bus_arm_motor.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_i2c_bit_shifter.v] -no_script -reset -force -quiet
+remove_files  {E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Wheel_Instruction_Analysis.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/TFT_driver.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Read_clock_of_LM75A.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Read_clock_of_APD.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Core_of_top.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/Bus_arm_motor.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/APD_i2c_bit_shifter.v}
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_data_tx.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_byte_tx.v] -no_script -reset -force -quiet
+remove_files  {E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_data_tx.v E:/CodeFile/JueSai/demoV7/Top_Final_test/vivado/TOP/SRC/uart_byte_tx.v}
+add_files {E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/i2c_control_motor_plus.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Wheel_Instruction_Analysis.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/TFT_top.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/LM75A_drive.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Top.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/arm_en_module.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/APD_i2c_control.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Core_of_top.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/uart_data_tx.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Read_clock_of_APD.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_bit_shifter.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Sense_top.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/TFT_driver.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/uart_byte_tx.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/arm_cal_m.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/LM75A_i2c_control.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/uart_byte_rx.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/i2c_bit_shifter.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Read_clock_of_LM75A.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/single_ROM2.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Arm.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/sonic.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Bus_arm_motor.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/sonic_digital.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/APD_i2c_bit_shifter.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Top_Arm_Motor.v E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/APD_drive.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/SRC/Top_const.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Mon Aug 19 09:53:05 2024] Launched synth_1...
+Run output will be captured here: E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/TOP.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Mon Aug 19 09:54:55 2024] Launched impl_1...
+Run output will be captured here: E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/TOP.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Mon Aug 19 09:56:45 2024] Launched impl_1...
+Run output will be captured here: E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/TOP.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+warning: cannot open library dpcomm.dll, first required symbol ftdimgr_lock, Digilent FTDI based JTAG cables cannot be supported
+warning: cannot open library djtg.dll, first required symbol DjtgGetPortCount, select Digilent JTAG cables cannot be supported
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+set_property PROGRAM.FILE {E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/TOP.runs/impl_1/Top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/TOP.runs/impl_1/Top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/CodeFile/JueSai/demoV8/Top_Final_test/vivado/TOP/TOP.runs/impl_1/Top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-oj1A
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 19 10:05:39 2024...

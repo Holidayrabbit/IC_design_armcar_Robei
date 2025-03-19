@@ -1,0 +1,87 @@
+#! c:/iverilog-x64/bin/vvp
+:ivl_version "10.1 (stable)" "(v10_1_1)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000002862f30 .scope module, "Core_of_top" "Core_of_top" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "Read_temp_ok"
+    .port_info 1 /INPUT 11 "Temp_data"
+    .port_info 2 /INPUT 16 "CSB_data"
+    .port_info 3 /OUTPUT 1 "LM75A_EN"
+    .port_info 4 /OUTPUT 1 "BUZZER_EN"
+    .port_info 5 /INPUT 1 "Clk"
+    .port_info 6 /INPUT 1 "Rst_n"
+P_000000000097e690 .param/l "Min_distance" 1 2 28, C4<00000000110010>;
+v0000000002863130_0 .var "BUZZER_EN", 0 0;
+o0000000002899b68 .functor BUFZ 16, C4<zzzzzzzzzzzzzzzz>; HiZ drive
+v00000000028631d0_0 .net "CSB_data", 15 0, o0000000002899b68;  0 drivers
+v0000000002863270_0 .var "CSB_data_buffer", 15 0;
+o0000000002899bc8 .functor BUFZ 1, C4<z>; HiZ drive
+v00000000028ea830_0 .net "Clk", 0 0, o0000000002899bc8;  0 drivers
+v00000000028ea8d0_0 .var "LM75A_EN", 0 0;
+o0000000002899c28 .functor BUFZ 1, C4<z>; HiZ drive
+v00000000028ea970_0 .net "Read_temp_ok", 0 0, o0000000002899c28;  0 drivers
+o0000000002899c58 .functor BUFZ 1, C4<z>; HiZ drive
+v00000000028eaa10_0 .net "Rst_n", 0 0, o0000000002899c58;  0 drivers
+o0000000002899c88 .functor BUFZ 11, C4<zzzzzzzzzzz>; HiZ drive
+v00000000028eaab0_0 .net "Temp_data", 10 0, o0000000002899c88;  0 drivers
+v00000000028eab50_0 .var "Temp_data_buffer", 10 0;
+E_000000000097e910/0 .event negedge, v00000000028eaa10_0;
+E_000000000097e910/1 .event posedge, v00000000028ea830_0;
+E_000000000097e910 .event/or E_000000000097e910/0, E_000000000097e910/1;
+    .scope S_0000000002862f30;
+T_0 ;
+    %wait E_000000000097e910;
+    %load/vec4 v00000000028eaa10_0;
+    %nor/r;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v00000000028ea8d0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0000000002863130_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v00000000028ea8d0_0, 0;
+    %load/vec4 v00000000028eaab0_0;
+    %assign/vec4 v00000000028eab50_0, 0;
+    %load/vec4 v00000000028631d0_0;
+    %assign/vec4 v0000000002863270_0, 0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0000000002862f30;
+T_1 ;
+    %wait E_000000000097e910;
+    %load/vec4 v00000000028eaa10_0;
+    %nor/r;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0000000002863130_0, 0;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v0000000002863270_0;
+    %cmpi/u 50, 0, 16;
+    %flag_or 5, 4;
+    %jmp/0xz  T_1.2, 5;
+    %pushi/vec4 1, 0, 1;
+    %assign/vec4 v0000000002863130_0, 0;
+    %jmp T_1.3;
+T_1.2 ;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0000000002863130_0, 0;
+T_1.3 ;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "E:/CodeFile/Fusai/BAJIAOBAN/Top_Final/RobeiSimulation/Core_of_top/verilog/Core_of_top.v";
